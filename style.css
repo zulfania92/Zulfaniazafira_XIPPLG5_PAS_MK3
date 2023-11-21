@@ -1,0 +1,195 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcd3d9; /* Warna pink muda */
+}
+
+header {
+  background-color: #e44d70; /* Warna pink tua */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+#catalog {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: calc(50% - 20px);
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.product h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.product p {
+  margin: 5px 0;
+  color: #777;
+}
+
+#cart {
+  background-color: #ffedf4; /* Warna pink muda sangat terang */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#cart h2 {
+  color: #e44d70; /* Warna pink tua */
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart-items li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cart-items li:last-child {
+  border-bottom: none;
+}
+
+#total {
+  font-size: 18px;
+  color: #e44d70; /* Warna pink tua */
+  margin-top: 15px;
+}
+
+#uangBayar {
+  width: 120px;
+  padding: 8px;
+  border: 1px solid #e44d70; /* Warna pink tua */
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #e44d70; /* Warna pink tua */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #ff6382; /* Warna pink terang */
+}
+
+#kembalian {
+  color: #ff6382; /* Warna pink terang */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#total-container {
+  background-color: #ffedf4; /* Warna pink muda sangat terang */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#total-container h2 {
+  color: #e44d70; /* Warna pink tua */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#total-label {
+  font-size: 18px;
+  color: #e44d70; /* Warna pink tua */
+}
+
+#total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e44d70; /* Warna pink tua */
+  margin-top: 10px;
+}
+
+/* CSS untuk struk/nota */
+#receipt {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#receipt h3 {
+  color: #e44d70; /* Warna pink tua */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#receipt h5 {
+  color: #16060a; /* Warna hitam */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#receipt-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#receipt-items li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-items li:last-child {
+  border-bottom: none;
+}
+
+#total-receipt,
+#bayar-receipt,
+#kembali-receipt {
+  font-size: 18px;
+  color: #e44d70; /* Warna pink tua */
+  margin-top: 10px;
+}

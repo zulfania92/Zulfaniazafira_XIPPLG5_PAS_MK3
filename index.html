@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Toko Roti</title>
+</head>
+
+<body>
+  <header>
+    <h1>Layers of Flavor Bakery</h1> <!-- nama toko roti-->
+  </header>
+
+  <section id="catalog"> 
+    <div class="row">
+      <!-- daftar produk roti - atas -->
+      <div class="product">
+        <img src="image/main-photo-1534735822365-x.png" alt="Roti 1">
+        <h2>Roti Srikaya</h2>
+        <p>Rp 5.000</p>
+        <button onclick="addToCart('Roti Srikaya', 10000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/resep-roti-abon-lezat-untuk-bekal-sekolah-anak-CQrEz3CQJ3.jpg" alt="Roti 2">
+        <h2>Roti Abon</h2>
+        <p>Rp 8.000</p>
+        <button onclick="addToCart('Roti Abon', 12000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/3fb5b2c64556928d936e74695fe764b2.jpg" alt="Roti 3">
+        <h2> Roti Sisir</h2>
+        <p> Rp 5.000</p>
+        <button onclick="addToCart('Roti Sisir', 5000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/rotisosis.jpg" alt="Roti 4">
+        <h2>Roti Sosis</h2>
+        <p> Rp 7.000</p>
+        <button onclick="addToCart('Roti Sosis', 7000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/pastryhornnnfbfr.jpg" alt="Roti 5">
+        <h2>Roti Tanduk</h2>
+        <p> Rp 3.000</p>
+        <button onclick="addToCart('Roti Tanduk', 3000)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- daftar produk roti - bawah -->
+      <div class="product">
+        <img src="image/bolenlilit.jpg" alt="Roti 6">
+        <h2>Bolen Lilit</h2>
+        <p>Harga: Rp 7.000</p>
+        <button onclick="addToCart('Bolen Lilit', 7000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/kroisant.jpg" alt="Roti 7">
+        <h2>Croissant</h2>
+        <p>Harga: Rp 6.000</p>
+        <button onclick="addToCart('Croissant', 6000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/bomboloni.jpg" alt="Roti 8">
+        <h2>Bomboloni</h2>
+        <p>Harga: Rp 4.000</p>
+        <button onclick="addToCart('Bomboloni', 4000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/rotikarakterr.jpg" alt="Roti 9">
+        <h2>Roti Karakter</h2>
+        <p>Harga: Rp 8.000</p>
+        <button onclick="addToCart('Roti Karakter', 8000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="image/bentocake.jpg" alt="Roti 10">
+        <h2>Bento Cake 5-10cm</h2>
+        <p>Harga: Rp 40.000</p>
+        <button onclick="addToCart('Bento Cake', 40000)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Keranjang Belanja</h2> <!--keranjang untuk roti yang akan di beli-->
+    <ul id="cart-items"></ul>
+
+  <section id="total-container">
+    <h2>Hitung</h2> <!--untuk menghitung-->
+    <p>Total: <span id="total">Rp 0</span></p>
+    <p>Bayar: <input type="number" id="uangBayar" placeholder="Masukkan jumlah uang"></p>
+    <button onclick="hitungKembalian()">Hitung Kembalian</button>
+    <span id="kembalian"></span>
+  </section>
+
+      <!--div untuk menampilkan struk/nota -->
+      <div id="receipt">
+        <h3>Layers of Flavor</h3> <!--notapembelian-->
+        <h5>Jl. Paris 3 C2 No 7, Bukit Sakura Residence, Kota Surakata, 53125. </h5>
+        <ul id="receipt-items"></ul>
+        <p>Total: <span id="total-receipt">Rp 0</span></p>
+        <p>Bayar: <span id="bayar-receipt">Rp 0</span></p>
+        <p>Kembali: <span id="kembali-receipt">Rp 0</span></p>
+      </div>
+    </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
